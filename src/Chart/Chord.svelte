@@ -116,7 +116,7 @@
     if (showChord(d, selectedNames)) {
       return 1;
     } else {
-      return 0.1;
+      return 0;
     }
   }
 
@@ -256,6 +256,15 @@
   >
 </defs>
 
+<!-- To reset chart  -->
+<rect
+  on:click={() => {
+    selectedCountry.set(null);
+  }}
+  width={dimensions.boundedWidth}
+  height={dimensions.boundedHeight}
+  fill-opacity="0"
+/>
 <!-- Move chart to center -->
 <g
   transform="translate({dimensions.boundedWidth / 2},{dimensions.boundedHeight /

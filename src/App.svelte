@@ -105,7 +105,9 @@
           >.
         </div>
         <div class="footer--github-icon">
-          <a href=""><i class="fa fa-github" /></a>
+          <a href="https://github.com/yizhe-ang/trade-network-vis"
+            ><i class="fa fa-github" /></a
+          >
         </div>
       </div>
     </div>
