@@ -9,7 +9,10 @@
   } from "./dataProcessing";
   import TemporalChart from "./Chart/TemporalChart.svelte";
   import NetworkChart from "./Chart/NetworkChart.svelte";
-  import { feature as topojsonFeature, mesh as topojsonMesh } from "topojson";
+  import {
+    feature as topojsonFeature,
+    mesh as topojsonMesh,
+  } from "topojson-client";
 
   // Define data
   const dataPath = "data/trading.csv";

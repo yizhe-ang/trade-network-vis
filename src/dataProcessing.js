@@ -29,7 +29,6 @@ export const computeLinks = (data, { year, type = "export" } = {}) => {
     target: d[0].split("|")[1],
     value: d[1],
   }));
-  console.log(out);
 
   return out;
 };

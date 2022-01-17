@@ -11,13 +11,16 @@ This visualization contains monthly import and export data between 15 countries 
 Clone or download this repository...
 ```bash
 git clone https://github.com/yizhe-ang/trade-network-vis.git
+# or
+npx degit yizhe-ang/trade-network-vis trade-network-vis
+
 cd trade-network-vis
 ```
 Install the dependencies...
 ```bash
 npm install
 ```
-Then run the application on localhost:5000:
+Then run the application on a local server:
 ```bash
 npm run dev
 ```
