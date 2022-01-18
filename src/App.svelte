@@ -100,18 +100,42 @@
     <!-- Footer -->
     <div class="footer-wrapper">
       <div class="footer">
+        <div class="footer--github-icon">
+          <a href="https://github.com/yizhe-ang/trade-network-vis"
+            ><i class="fa fa-github" /></a
+          >
+        </div>
         <div class="footer--text">
-          This visualization contains monthly import and export data between 15
-          countries of interest, downloaded and processed from the International
+          Made using <a href="https://svelte.dev/">Svelte</a> and
+          <a href="https://d3js.org/">d3</a>.
+        </div>
+        <div class="footer--text">
+          This visualization contains <b>monthly import and export data between 15
+            countries of interest</b>, downloaded and processed from the International
           Monetary Fund's (IMF) <a
             href="https://data.imf.org/?sk=9d6028d4-f14a-464c-a2f2-59b2cd424b85"
             >Direction of Trade Statistics (DOTS) Dataset</a
           >.
         </div>
-        <div class="footer--github-icon">
-          <a href="https://github.com/yizhe-ang/trade-network-vis"
-            ><i class="fa fa-github" /></a
-          >
+        <div class="footer--text">
+          There are two linked views: a network diagram and a timeline.
+        </div>
+        <div class="footer--text">
+          The <b>network diagram</b> is a directed chord diagram that visualizes the
+          trade flows between countries for a single year. An outgoing arrow
+          represents the value of exports from a source to a target country. The
+          countries are grouped and colored according to their geographic
+          region, and arranged by their geographical proximity. You can click on
+          the arcs to select a country to be displayed on the timeline.
+        </div>
+        <div class="footer--text">
+          The <b>timeline</b> visualizes the change in amount of imports and exports
+          for a single country using two separate lines. The change in balance
+          of trade is depicted by the height of the area between the two lines,
+          which is color-coded according to whether it was negative or positive.
+          The timeline is slidable; you can play it automatically to see how the
+          trade network changes over the years, or simply select a specific year
+          to visualize.
         </div>
       </div>
     </div>
@@ -139,16 +163,17 @@
   .footer {
     max-width: 500px;
     margin: 0 auto;
-    padding: 50px 20px 30px 20px;
+    padding: 40px 20px 40px 20px;
   }
   .footer--text {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
   .footer--text a {
     color: #7d9ea5;
   }
   .footer--github-icon {
     text-align: center;
+    padding-bottom: 20px;
   }
   .footer--github-icon i {
     font-size: 32px;
